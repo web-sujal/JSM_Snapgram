@@ -29,3 +29,10 @@ export const useSignOutAccount = () => {
     mutationFn: signOutAccount,
   });
 };
+
+export const useCreatePost = () => {
+  return useMutation({
+    mutationFn: (user: { email: string; password: string }) =>
+      signInAccount(user),
+  });
+};
