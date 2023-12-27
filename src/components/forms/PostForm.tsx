@@ -22,12 +22,12 @@ import { toast } from "../ui/use-toast";
 import { useNavigate } from "react-router-dom";
 
 type PostFormProps = {
-  post: Models.Document;
+  post?: Models.Document;
 };
 
 const PostForm = ({ post }: PostFormProps) => {
   const { user } = useUserContext();
-  const { mutateAsync: createPost, isPending: isLoadingCreatePost } =
+  const { mutateAsync: createPost } =
     useCreatePost();
   const navigate = useNavigate();
 
