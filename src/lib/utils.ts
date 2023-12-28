@@ -38,3 +38,7 @@ export function getTimeDifference(dateString: string): string {
     return `${years} ${years === 1 ? "year" : "years"} ago`;
   }
 }
+
+export const checkIsLiked = (likeList: string[], userId: string) => {
+  return likeList.includes(userId);
+};

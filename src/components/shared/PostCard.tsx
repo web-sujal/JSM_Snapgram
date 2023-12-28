@@ -2,6 +2,7 @@ import { useUserContext } from "@/context/AuthContext";
 import { getTimeDifference } from "@/lib/utils";
 import { Models } from "appwrite";
 import { Link } from "react-router-dom";
+import PostStats from "./PostStats";
 
 type PostCardProps = {
   post: Models.Document;
@@ -71,9 +72,12 @@ const PostCard = ({ post }: PostCardProps) => {
         <img
           src={post.imageUrl || "/public/assets/icons/profile-placeholder.svg"}
           alt="post image"
-          className="post-card_image rounded-lg"
+          className="post-card_image"
         />
       </Link>
+
+      {/* Post stats */}
+      <PostStats post={post} userId={user.id} />
     </div>
   );
 };
