@@ -1,30 +1,60 @@
-# React + TypeScript + Vite
+# Snapgram
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Snapgram is a user-friendly social media application where you can connect, share moments, and explore content created by others. Built with React, TypeScript, and powered by Appwrite, Snapgram provides a seamless experience for users to sign up, create and customize posts, like and save favorite moments, and connect with a vibrant community.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Authentication:** Complete authentication system integrated with Appwrite.
+- **CRUD Posts:** Users can create, read, update, and delete posts with captions, tags, and images.
+- **Interactions:** Users can like and save posts.
+- **Explore Section:** Infinite scroll functionality for exploring various posts created by other users.
+- **Search Posts:** Search functionality based on post captions.
+- **User Profiles:** Navigate to the creator's profile by clicking on a post, similar to other social media apps.
 
-## Expanding the ESLint configuration
+## Upcoming Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Share Post:** Planned integration of `react-share` to enable users to share posts.
+- **Comments:** Future functionality to add comments to posts.
 
-- Configure the top-level `parserOptions` property like this:
+## Tech Stack
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- **Frontend:** React, TypeScript
+- **Backend:** Appwrite
+- **Package Bundler:** Vite
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Libraries
+
+- React Query
+- React Router
+- React Dropzone
+- React Intersection Observer
+- React Hook Form
+- Zod
+- Tailwind CSS
+- Shadcn
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js and npm installed
+- Appwrite backend set up
+
+### Installation
+
+1. Clone the repository: `git clone [repository_url]`
+2. Install dependencies: `npm install`
+3. Configure Appwrite: Set up your Appwrite backend and update the configuration.
+
+## Usage
+
+1. Start the development server: `npm run dev`
+2. Open the app in your browser: `http://localhost:5173`
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Acknowledgments
+
+- The [Appwrite](https://appwrite.io/) team for providing a powerful backend solution.
