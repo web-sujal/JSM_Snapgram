@@ -51,10 +51,6 @@ Snapgram is a user-friendly social media application where you can connect, shar
 1. Start the development server: `npm run dev`
 2. Open the app in your browser: `http://localhost:5173`
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
 ## Acknowledgments
 
 - The [Appwrite](https://appwrite.io/) team for providing a powerful backend solution.

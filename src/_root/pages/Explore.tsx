@@ -23,7 +23,7 @@ const Explore = () => {
 
   useEffect(() => {
     if (inView && !searchValue) fetchNextPage();
-  }, [inView, searchValue]);
+  }, [fetchNextPage, inView, searchValue]);
 
   if (!posts) {
     return (
@@ -83,7 +83,10 @@ const Explore = () => {
           <p className="text-light-4 mt-10 text-center w-full">End of Posts</p>
         ) : (
           posts.pages.map((item, index: number) => (
-            <GridPostList key={`page-${index}`} posts={item.documents} />
+            <GridPostList
+              key={`page-${index}`}
+              posts={item && item.documents}
+            />
           ))
         )}
       </div>
